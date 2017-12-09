@@ -1,0 +1,47 @@
+<div class="container-fluid">
+
+
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h2 class="title text-center">Available Loads </h2>
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let cell of availableloadTable.headerRow">{{cell}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let row of availableloadTable.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                                <!--<td>
+                                    <button type="submit" class="btn btn-info btn-fill btn-wd">Notify Load</button>
+                                </td>-->
+                                <td>
+                                    <select>
+  <option value="volvo">Sandeep</option>
+  <option value="saab">Raghu</option>
+  <option value="opel">Benedict</option>
+  <option value="audi">Anand</option>  
+</select>
+                                </td>
+                                <td>
+                                    <button type="save" class="btn btn-info btn-fill btn-wd">Notify</button>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <button type="submit" style="align-items:center" class="btn btn-info btn-fill btn-wd">Notify All Drivers</button>
+        </div>
+    </div>
+</div>
